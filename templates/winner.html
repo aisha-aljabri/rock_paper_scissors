@@ -1,0 +1,40 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+
+            <p>Player chose: {{ player_choice }}</p>
+            <p>Computer chose: {{ computer_choice }}</p>
+
+            {% if winner == 'tie' %}
+                <h1>There was a tie!</h1>
+
+            {% else %}
+                <h1>{{ winner}} WINS!</h1>
+            {% endif %}
+
+        
+
+
+        <table >
+            <tr>
+                <th>Status</th>
+                <th>Count</th>
+            </tr>
+            <tr>
+                <td>Wins</td>
+                <td>Lossess</td>
+                <td>Ties</td>
+            </tr>
+            <tr>
+                <td>{{wins}}</td>
+                <td>{{Lossess}}</td>
+                <td>{{Ties}}</td>
+            </tr>
+        </table>
+
+        <a href="/">Play again!</a>
+    </body>
+</html>
